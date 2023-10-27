@@ -15,8 +15,13 @@ bank_statement_data.json.
 ## Installation Guide
 
 Follow these steps to set up and run the project:
-
-1. Clone the project repository to your local machine:
+2. Create a folder of your desired name.
+3. Navigate to the project folder.
+   ```bash
+   cd projectName
+   ```
+3. Clone the project repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/bank-statement-parser.git
+   git clone https://github.com/absiemon/Bank-Statement-Parser.git
+   ```
