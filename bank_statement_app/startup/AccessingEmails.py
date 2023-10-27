@@ -12,7 +12,7 @@ imap.login(email_address, password)
 imap.select("Inbox")
 
 #getting emails ids of emails whose SUBJECT bank statement
-typ, email_ids = imap.search(None, 'SUBJECT "My Bank Statements"')
+typ, email_ids = imap.search(None, 'SUBJECT "My bank statement"')
 
 #mentioning directory to save the pdf files
 base_dir = os.path.dirname(os.path.abspath(__file__))
