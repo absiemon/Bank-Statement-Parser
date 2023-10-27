@@ -81,7 +81,6 @@ def main(pdf_directory, output_file):
     print(f"JSON data has been saved to {output_file}")
 
 if __name__ == "__main__":
-    pdf_directory = "../pdfs"
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    output_file = os.path.join(base_dir, '../bank_statement_data.json')
+    pdf_directory = os.path.join(os.path.dirname(__file__), "..", "pdfs")
+    output_file = os.path.join(os.path.dirname(__file__), '../bank_statement_data.json')
     main(pdf_directory, output_file)
