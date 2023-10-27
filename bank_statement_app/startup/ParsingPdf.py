@@ -82,5 +82,6 @@ def main(pdf_directory, output_file):
 
 if __name__ == "__main__":
     pdf_directory = "../pdfs"
-    output_file = "bank_statement_project/bank_statement_app/bank_statement_data.json"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    output_file = os.path.join(base_dir, '../bank_statement_data.json')
     main(pdf_directory, output_file)

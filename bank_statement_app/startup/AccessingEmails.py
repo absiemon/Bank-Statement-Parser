@@ -15,7 +15,8 @@ imap.select("Inbox")
 typ, email_ids = imap.search(None, 'SUBJECT "My Bank Statements"')
 
 #mentioning directory to save the pdf files
-pdfs_directory = "bank_statement_project/bank_statement_app/pdfs"
+base_dir = os.path.dirname(os.path.abspath(__file__))
+pdfs_directory = os.path.join(base_dir, '../pdfs')
 
 # Checking if the directory exists, if not, creating it
 if not os.path.exists(pdfs_directory):
