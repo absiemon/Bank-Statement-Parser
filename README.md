@@ -50,9 +50,16 @@ Follow these steps to set up and run the project:
    ```bash
    python ParsingPdf.py
    ```
-9. Now hit the apis to get the result.
+9. Navigate to the root project directory where manage.py is there. Run below command.
+   ```bash
+   python manage.py runserver
+   ```
+10. Now hit the apis to get the result.
    ```bash
    http://127.0.0.1:8000/api/bank-statements?page=1&page_size=10
    http://127.0.0.1:8000/api/bank-statements/search?start_date=mm/dd/yyyy&end_date=mm/dd/yyyy
    http://127.0.0.1:8000/api/bank-statements/search-by-date?target_date=mm/dd/yyyy
    ```
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
