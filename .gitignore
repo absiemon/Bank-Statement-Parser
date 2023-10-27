@@ -1,0 +1,3 @@
+db.sqlite3
+.env
+bank_statement_app/startup/env.py
